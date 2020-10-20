@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="InstagramVideosDownload">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Download Instagram videos and Instagram images and save them directly to your computer or mobile device for free.">
+
+
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <!------------------------------------------ UPLOAD FAVICON BELOW--------------------------------->
+    <meta name="msapplication-TileImage" content="#" />
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Download Instagram Videos and Instagram Images Online</title>
+
+
+
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//use.fontawesome.com">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//ssl.google-analytics.com">
+
+    <!-- Open Graph data -->
+    <meta itemprop="name" content="Download Instagram Videos and Instagram Images Online" />
+    <meta itemprop="description" content="Download Instagram videos or Instagram Images and save them directly to your computer or mobile device for free." />
+
+    <meta property="og:site_name" content="InstagramVideosDownload" />
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/insta.css">
+
+
+
+
+
+    <!-- CSS FILE HERE -->
+
+
+
+
+    <!--CSS FILE HERE-->
+
+
+
+
+
+</head>
+
+<body class="videoDownloader ">
+
+
+    <section class="hero hero-bg" style="overflow: hidden">
+        <canvas id="canvas" style="width: 100%; height: 1000px; position: absolute; z-index: 1; margin-top: 90px;"></canvas>
+
+        <header style="position: relative; z-index: 20">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed transition" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" title="" href="instagramvideodownload.net"><span class="insta">InstagramVideosDownloader</span></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav nav-list fr">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container intro-container" style="position: relative; z-index: 10;">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1>InstaVideosDownload.Net</h1>
+                    <p class="intro">Download Instagram videos and Instagram images and save them for offline use.</p>
+
+                    <div id="link-form" class="form-container link-form">
+                        <form id="link-form" method="post" data-action="process/" action="">
+                            <p>Paste Instagram URL Example: https://www.instagram.com/p/V2drXfoh0r/</p>
+                            <div class="input-container relative">
+                                <span class="instagram-icon"></span>
+                                <input name="fileURL" id="fileURL" onClick="this.setSelectionRange(0, this.value.length)" placeholder="Paste Instagram Link Here..." type="text" />
+                            </div>
+                            <button class="download-btn" id="submit">Press Here To Download</button>
+                        </form>
+                        <div id="download-results">
+                            <div class="download-items slick" style="display: none;">
+                                <div class="row">
+                                    <p class="description" style="margin-bottom: 24px;">Click the <strong>green</strong> download button to save the file.</p>
+
+                                    <div class="items-list">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="welcome-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="intro">
+                        <h1>How to download Instagram videos & Images</h1>
+                        <p>Download Unlimited number of videos & Images you like following these steps</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <ul class="steps">
+                        <li class="middle">
+                            <p> Open Instagram post that you want to download and copy the link clicking the 3 dots on top right as shown below.</p>
+                        </li>
+                        <img class="middle" src="images/i1.jpg" alt="">
+                        <li>
+                            <p> Copy the post link to your clipboard.</p>
+                        </li>
+                        <img src="images/inst2.jpg" alt="">
+
+                        <li>
+                            <p> Paste the link in to input field above titled “<strong>Paste Instagram link here...</strong>" </p>
+                        </li>
+                        <img src="images/i3.jpg" alt="">
+
+                        <li>
+                            <p> Click the "<strong>Download</strong>" button to generate the video download link for the post. Click download button and save the video to your device.</p>
+                        </li>
+                        <img src="images/i4.jpg" alt="">
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="lastcont">
+        <div class="faq">
+            <div class="cntr">
+                <h1 class="last">Frequently Asked Questions</h1>
+            </div>
+            <div class="qstn">
+                <ol class="lastquerry">
+                    <li>
+                        <h3> What is InstagramVideoDownloader ?</h3>
+                    </li> <br>
+                    <p class="lastpara"> InstagramVideoDownloader is a tool which allows one to Download Unlimited Number Instagram Videos and Instagram Photos for free.Yes it is free . </p>
+
+
+                    <li>
+                        <h3> Is it legal to download videos and photos from instagram ?</h3>
+                    </li> <br>
+                    <p class="lastpara"> Yes . It is legal and there is no restriction on downloading instagram photos and videos. Except for Private accounts. Otherwise the tool is 100% safe to download and save instagram videos and instagram photos and save them for other
+                        non commercial uses. But only with the permission of publisher. </p>
+
+
+                    <li>
+                        <h3> Is there any limit to download number of Photos and Videos from Instagram ?</h3>
+                    </li> <br>
+                    <p class="lastpara"> No. There is no such limit to download number of Images and Photos from Instagram Using our tool. One can Download Unlimited Number of Instagram Photos and Instagram Videos with this tool. </p>
+                    <br>
+
+                </ol>
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <footer class=" page-footer" style='margin-top:0; border: none'>
+        <div class="primary-footer relative">
+
+            <ul class="nav-footer remove-style">
+                <li><a href="#"><span class="fa fa-comment-alt"></span>&nbsp;Feedback</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Instagram Text Generator</a></li>
+            </ul>
+
+            <p class="copyright">Copyright &copy; 2020. All rights reserved. <br>InstagramVideosDownload.net
+                <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://instaoffline.net/assets/javascripts/1943253472.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        $(window).bind('load', function() {
+            $card = $(".card");
+            var heights = $card.map(function() {
+                    return $(this).height();
+                }).get(),
+                maxHeight = Math.max.apply(null, heights);
+            $card.height(maxHeight);
+        });
+
+        $(document).ready(function() {
+
+
+            $("#close").on('click', function(e) {
+                e.preventDefault();
+                $(this).parent().removeClass('active');
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 500) { // If page is scrolled more than 800px
+                    $('#return-to-top').fadeIn(300); // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200); // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() { // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0 // Scroll to top of body
+                }, 500);
+            });
+
+            $('#download-result').on('click', function(e) {
+
+                var url = $(this).prop('href'),
+                    name = $(this).data('name'),
+                    isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                if (isSafari) {
+
+                    e.preventDefault();
+                    url = encodeURI(url);
+                    name = encodeURI(name);
+                    query = btoa('url=' + url + '&name=' + name);
+                    downloadLink = "https://instaoffline.net/dl?v=" + query;
+                    window.location.href = downloadLink;
+
+                } else {
+                    e.preventDefault();
+                    var x = new XMLHttpRequest();
+                    x.open("GET", url, true);
+                    x.responseType = 'blob';
+                    x.onload = function(e) {
+                        download(x.response, name, "application/octet-stream");
+                    }
+                    x.send();
+                }
+            });
+
+            function validateURL() {
+                var $submit = $('#submit'),
+                    videoURL = $('#fileURL').val().trim(),
+                    $form = $('form'),
+                    action = $form.data('action');
+
+                $('.download-items').hide();
+
+                if ($('.items-list').hasClass('slick-initialized')) {
+                    $('.items-list').slick('destroy');
+                }
+
+                $('.items-list').empty();
+                var p = /(https?:\/\/(?:www\.)?instagram\.com\/p\/([^\/?#&]+)).*/i;
+                if (!videoURL.match(p)) {
+                    $('#alert .message').html('<span class="fa fa-exclamation-circle"></span>&nbsp;&nbsp;The input field cannot be left empty. Please try again with a valid URL.');
+                    $('#alert').addClass('active');
+                } else {
+                    $submit.html('<span class="fa fa-spinner fa-spin"></span>').prop('disabled', 'true');
+                    var dataString = decodeURI(videoURL);
+
+
+
+                    var matches = videoURL.match(p);
+                    dataString = 'https://www.instagram.com/p/' + matches[2] + '/';
+                    videoURL = dataString;
+
+                    data = ig(dataString);
+                    console.log(data);
+                    if (data != false) {
+
+                        var contents = data.graphql.shortcode_media;
+
+                        if (contents.edge_sidecar_to_children) {
+                            items = contents.edge_sidecar_to_children.edges;
+                            result = '';
+                            for (var i = 0; i < items.length; i++) {
+
+                                if (url = items[i].node.video_url) {
+                                    result += '<div class="col-md-6 item"><div class="item-container relative"><span class="fa fa-video"></span>';
+                                    result += '<img src="' + items[i].node.display_url + '"></div>';
+                                    result += '<a class="button" target="_blank" rel=”noreferrer” href="https://instaoffline.net/dl/?v=' + btoa(items[i].node.video_url + '&title=' + matches[2] + '&format=mp4') + '">Download Video</a></div>';
+                                } else {
+                                    result += '<div class="col-md-6"><div class="item-container relative"><span class="fa fa-camera"></span>';
+                                    result += '<img src="' + items[i].node.display_url + '"></div>';
+                                    result += '<a class="button" target="_blank" rel=”noreferrer” href="https://instaoffline.net/dl/?v=' + btoa(items[i].node.display_url + '&title=' + matches[2] + '&format=jpg') + '">Download Image</a></div>';
+                                }
+                            }
+
+                            $('.items-list').append(result);
+                            $('.download-items').fadeIn();
+                            $('.items-list').slick(getSliderSettings());
+
+                            $submit.html('Download').prop('disabled', '');
+                            window.history.pushState("string", "", ajaxUrlBase + 'carousel-downloader/' + '?q=' + videoURL);
+
+                            $([document.documentElement, document.body]).animate({
+                                scrollTop: $(".download-btn").offset().top
+                            }, 800);
+
+                        } else if (contents.is_video) {
+                            item = {
+                                imageUrl: contents.display_url,
+                                url: contents.video_url,
+                                format: 'video'
+                            };
+
+                            result = '<div class="col-md-6"><div class="item-container relative"><span class="fa fa-video"></span>';
+                            result += '<img src="' + item.imageUrl + '"></div>';
+                            result += '<a class="button" target="_blank" rel=”noreferrer”  href="https://instaoffline.net/dl/?v=' + btoa(item.url + '&title=' + matches[2] + '&format=mp4') + '">Download Video</a></div>';
+                            $('.items-list').append(result);
+                            $('.download-items').fadeIn();
+                            $('.items-list').slick(getSliderSettings());
+
+                            $submit.html('Download').prop('disabled', '');
+                            window.history.pushState("string", "", ajaxUrlBase + 'video-downloader/' + '?q=' + videoURL);
+
+                            $([document.documentElement, document.body]).animate({
+                                scrollTop: $(".download-btn").offset().top
+                            }, 800);
+
+
+                        } else if (contents.__typename == 'GraphImage') {
+                            item = {
+                                imageUrl: contents.display_url,
+                                url: contents.display_url,
+                                format: 'image'
+                            };
+
+                            result = '<div class="col-md-6"><div class="item-container relative"><span class="fa fa-camera"></span>';
+                            result += '<img src="' + item.imageUrl + '"></div>';
+                            result += '<a class="button" target="_blank" rel=”noreferrer” href="https://instaoffline.net/dl/?v=' + btoa(item.url + '&title=' + matches[2] + '&format=jpg') + '">Download Image</a></div>';
+                            $('.items-list').append(result);
+                            $('.download-items').fadeIn();
+                            $('.items-list').slick(getSliderSettings());
+
+
+
+                            $submit.html('Download').prop('disabled', '');
+                            window.history.pushState("string", "", ajaxUrlBase + '?q=' + videoURL);
+
+                            $([document.documentElement, document.body]).animate({
+                                scrollTop: $(".download-btn").offset().top
+                            }, 800);
+                        } else {
+                            $submit.html('Download').prop('disabled', '');
+                            $('#alert .message').html('<span class="fa fa-exclamation-circle"></span>&nbsp;&nbsp;There was an error with the Instagram link you submitted. Please try again.');
+                            $('#alert').addClass('active');
+                        }
+                    } else {
+                        $submit.html('Download').prop('disabled', '');
+                        $('#alert .message').html('<span class="fa fa-exclamation-circle"></span>&nbsp;&nbsp;There was an error with the Instagram link you submitted. Please try again.');
+                        $('#alert').addClass('active');
+                    }
+                }
+            }
+
+            function ig(url) {
+                respnse = '';
+                $.ajax({
+                    url: url + '?__a=1',
+                    type: 'GET',
+                    cache: false,
+                    async: false,
+                    success: function(e) {
+                        if (e == '{}') {
+                            response = false;
+                        } else {
+                            response = e;
+                        }
+
+                    },
+                    error: function(data) {
+                        response = false;
+                    },
+                    timeout: 3000 // sets timeout to 3 seconds
+                });
+
+                return response;
+            }
+
+            function validateContact(dataString) {
+                var $submit = $('#submit');
+                $submit.html('<span class="fa fa-spinner fa-spin"></span>').prop('disabled', 'true');
+                console.log(dataString);
+                $.ajax({
+                    type: "POST",
+                    url: ajaxUrlBase + "contact/",
+                    data: dataString,
+                    dataType: 'json',
+                    success: function(result) {
+                        console.log(result);
+                        if (!result.error) {
+                            $submit.html('Send').prop('disabled', 'true');
+                            $('#alert').addClass('alert-success');
+                            $('#alert .message').html('<span class="fa fa-check-circle"></span>&nbsp;&nbsp;Success, your message has been received. We will get back to you as soon as humanly possible.');
+                            $('#alert').addClass('active');
+                        } else {
+                            $submit.html('Send').prop('disabled', '');
+                            $('#alert').removeClass('alert-success');
+                            $('#alert .message').html('<span class="fa fa-exclamation-circle"></span>&nbsp;&nbsp;Oops. Please make sure you fill in all of the form fields.');
+                            $('#alert').addClass('active');
+                        }
+                    }
+                });
+            }
+
+
+            $("form").submit(function(event) {
+                event.preventDefault();
+                validateURL();
+            });
+
+            //Hero animated canvas icons
+            if ($('#canvas').length) {
+                var Canvas = document.getElementById('canvas');
+                var ctx = Canvas.getContext('2d');
+
+                var resize = function() {
+                    Canvas.width = Canvas.clientWidth;
+                    Canvas.height = Canvas.clientHeight;
+                };
+                window.addEventListener('resize', resize);
+                resize();
+
+                var elements = [];
+                var presets = {};
+
+                presets.o = function(x, y, s, dx, dy) {
+                    return {
+                        x: x,
+                        y: y,
+                        r: 12 * s,
+                        w: 5 * s,
+                        dx: dx,
+                        dy: dy,
+                        draw: function(ctx, t) {
+                            this.x += this.dx;
+                            this.y += this.dy;
+
+                            ctx.beginPath();
+                            ctx.arc(this.x + +Math.sin((50 + x + (t / 10)) / 100) * 3, this.y + +Math.sin((45 + x + (t / 10)) / 100) * 4, this.r, 0, 2 * Math.PI, false);
+                            ctx.lineWidth = this.w;
+                            ctx.strokeStyle = 'rgba(192,192,192,0.35)';
+                            ctx.stroke();
+                        }
+                    }
+                };
+
+                presets.x = function(x, y, s, dx, dy, dr, r) {
+                    r = r || 0;
+                    return {
+                        x: x,
+                        y: y,
+                        s: 20 * s,
+                        w: 5 * s,
+                        r: r,
+                        dx: dx,
+                        dy: dy,
+                        dr: dr,
+                        draw: function(ctx, t) {
+                            this.x += this.dx;
+                            this.y += this.dy;
+                            this.r += this.dr;
+
+                            var _this = this;
+                            var line = function(x, y, tx, ty, c, o) {
+                                o = o || 0;
+                                ctx.beginPath();
+                                ctx.moveTo(-o + ((_this.s / 2) * x), o + ((_this.s / 2) * y));
+                                ctx.lineTo(-o + ((_this.s / 2) * tx), o + ((_this.s / 2) * ty));
+                                ctx.lineWidth = _this.w;
+                                ctx.strokeStyle = c;
+                                ctx.stroke();
+                            };
+
+                            ctx.save();
+
+                            ctx.translate(this.x + Math.sin((x + (t / 10)) / 100) * 5, this.y + Math.sin((10 + x + (t / 10)) / 100) * 2);
+                            ctx.rotate(this.r * Math.PI / 180);
+
+                            line(-1, -1, 1, 1, 'rgba(192,192,192,0.35)');
+                            line(1, -1, -1, 1, 'rgba(192,192,192,0.35)');
+
+                            ctx.restore();
+                        }
+                    }
+                };
+
+                for (var x = 0; x < Canvas.width; x++) {
+                    for (var y = 0; y < Canvas.height; y++) {
+                        if (Math.round(Math.random() * 8000) == 1) {
+                            var s = ((Math.random() * 5) + 1) / 10;
+                            if (Math.round(Math.random()) == 1)
+                                elements.push(presets.o(x, y, s, 0, 0));
+                            else
+                                elements.push(presets.x(x, y, s, 0, 0, ((Math.random() * 3) - 1) / 10, (Math.random() * 360)));
+                        }
+                    }
+                }
+
+                setInterval(function() {
+                    ctx.clearRect(0, 0, Canvas.width, Canvas.height);
+
+                    var time = new Date().getTime();
+                    for (var e in elements)
+                        elements[e].draw(ctx, time);
+                }, 10);
+            }
+
+
+            function getSliderSettings() {
+                return {
+                    infinite: true,
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    prevArrow: '<div class="arrow-left"><i class="fa  fa-arrow-left"></i></div>',
+                    nextArrow: '<div class="arrow-right"><i class="fa  fa-arrow-right"></i></div>',
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }]
+                }
+            };
+
+        });
+    </script>
+
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs')
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78205517-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-78205517-3');
+    </script>
+
+
+
+
+    <div id='alert' class="alert">
+        <p class="message" style="margin-bottom: 0;"></p><span id="close" class="alert-close">&#10005;</span></div>
+
+
+</body>
+
+</html>
